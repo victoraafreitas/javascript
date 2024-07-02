@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+    <script>
+        // Inicio estrutura de média
+        // let notaMin =7;
+
+        // let nota1 = parseInt(prompt("Digite a 1º nota: "));
+        // let nota2 = parseInt(prompt("Digite a 2º nota: "));
+        // let media =(nota1 + nota2)/2;
+
+        // console.log("A média do aluno é:" + media);
+
+        // if(media >= notaMin){
+        //     console.log("Aluno aprovado com média: " + media);
+        // }else{
+        //     console.log("Aluno reprovado com média: " + media);
+        // }
+        // Fim estrutura de média
+
+        // Inicio estrutura login
+        let email_base = "teste@gmail.com";
+        let senha_base = "12345678";
+
+        var tentativa = 0;
+        var tentativaMax = 3;
+
+        do {
+            let email = prompt("Digite seu email: ");
+            let senha = prompt("Digite sua senha: ");
+
+
+            if (email_base == email && senha_base == senha) {
+                tentativa = tentativaMax;
+                alert("Usuario logado");
+                break;
+            } else {
+                if (tentativa == 2) {
+                    alert("Email ou senha errada");
+                    break;
+                } else {
+                    alert("Login Inválido. Tente novamente");
+                }
+            }
+            tentativa++;
+
+        } while (tentativa != tentativaMax);
+        // Fim estrutura login
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
