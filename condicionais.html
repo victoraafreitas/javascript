@@ -22,7 +22,6 @@
         // }
         // Fim estrutura de média---------------------------------------------------------------------------
 
-
         // Inicio estrutura login---------------------------------------------------------------------------
         // let email_base = "teste@gmail.com";
         // let senha_base = "12345678";
@@ -52,28 +51,36 @@
         // } while (tentativa != tentativaMax);
         // Fim estrutura login-----------------------------------------------------------------------------
 
+        // // Inicio estrutura imc----------------------------------------------------------------------------
+        // let texto = '';
 
-        // Inicio estrutura imc----------------------------------------------------------------------------
-        let texto = '';
+        // let peso = parseFloat(prompt("Digite seu peso: "));
+        // let altura = parseFloat(prompt("Digite sua altura: "));
+        // let imc = peso / (altura ** 2);
 
-        let peso = parseFloat(prompt("Digite seu peso: "));
-        let altura = parseFloat(prompt("Digite sua altura: "));
-        let imc = peso / (altura ** 2);
+        // if (imc < 18.5) {
+        //     texto = "Baixo peso: " + imc.toFixed(2);
+        // } else if (imc > 18.5 && imc < 24.99) {
+        //     texto = "Normal: " + imc.toFixed(2);
+        // } else if (imc >= 25 && imc < 29.99) {
+        //     texto = "Sobrepeso: " + imc.toFixed(2);
+        // } else if (imc >= 30) {
+        //     texto = "Obsidade: " + imc.toFixed(2);
+        // }
 
-        if (imc < 18.5) {
-            texto = "Olá, seu IMC é: " + imc.toFixed(2) "\n Você está com baixo peso";
-        } else if (imc > 18.5 && imc < 24.99) {
-            texto = "Normal: " + imc.toFixed(2);
-        } else if (imc >= 25 && imc < 29.99) {
-            texto = "Sobrepeso: " + imc.toFixed(2);
-        } else if (imc >= 30) {
-            texto = "Obsidade: " + imc.toFixed(2);
-        }
-
-        alert(texto);
-        // Fim estrutura imc---------------------------------------------------------------------------------
+        // alert(texto);
+        // // Fim estrutura imc----------------------------------------------------------------------------
 
 
+        // Inicio estrutura array--------------------------------------------------------------------------------
+        let frutas = ['banana', 'laranja', 'maça', 'uva'];
+
+        console.log(frutas);
+        console.log(frutas[0]);
+        console.log(frutas.indexOf('maça'));
+
+        frutas.push('manga');
+        console.log(frutas);
 
     </script>
 </head>
